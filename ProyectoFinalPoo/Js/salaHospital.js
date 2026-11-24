@@ -7,13 +7,16 @@ class SalaHospital {
         this.#pacientes = [];
     }
 
-    getPacientes() { return this.#pacientes; }
+    getPacientes() { 
+        return this.#pacientes; 
+        console.log(pacientes)
+    }
 
-    agregar(p) {
+    agregar(pacientes) {
         if (this.#pacientes.length >= this.#capacidad) {
             throw new Error("Sala llena");
         }
-        this.#pacientes.push(p);
+        this.#pacientes.push(pacientes);
     }
 
     reporte() {

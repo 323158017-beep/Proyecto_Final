@@ -11,6 +11,7 @@ function registrar() {
         if (tipo == "externo") {
             let tarifa = document.getElementById("tarifa").value;
             paciente = new PacienteExterno(exp, nom, dias, tarifa);
+            console.log(paciente)
         } else {
             let costo = document.getElementById("costo").value;
             let insumos = document.getElementById("insumos").value;
